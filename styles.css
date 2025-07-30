@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: antiquewhite;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+}
+
+.dashboard{
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.header{
+    background-color: yellow;
+}
+
+.projectWrapper{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+   
+}
+
+.project{
+    background-color: white;
+}
+
