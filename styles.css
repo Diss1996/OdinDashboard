@@ -5,7 +5,8 @@
 }
 
 body{
-     background-color: antiquewhite;
+     background-color: lightgray;
+     font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -16,11 +17,12 @@ body{
 }
 
 .dashboard{
-    background-color: blue;
+    background-color: lightseagreen;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
     grid-template-rows: 1fr 2fr 2fr 3fr;
+    
 }
 
 .wrapped{
@@ -31,7 +33,77 @@ body{
 }
 
 .header{
-    background-color: yellow;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 30px;
+    box-shadow: 0 5px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+.headerTop{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTopLeft{
+    display: flex;
+    gap: 40px;
+}
+
+.headerTopRight{
+    display: flex;
+    gap: 50px;
+}
+
+.headerTopRight p{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-left: -15px;
+}
+
+.headerBottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerBottomLeft, .headerBottomRight{
+    display: flex;
+    align-items: center;
+}
+
+.headerBottomLeft{
+    gap: 15px;
+}
+
+.headerBottomLeft p{
+    font-size: 30px;
+}
+
+.headerBottomRight{
+    gap: 100px;
+}
+
+.headerBottomRight button{
+    border-radius: 45px;
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+}
+
+
+input{
+    width: 800px;
+    height: 30px;
+    border-radius: 45px;
+    border: none;
+    background-color: lightgray;
+    
 }
 
 .mainWrapper{
@@ -40,7 +112,7 @@ body{
 }
 
 .projectWrapper{
-    background-color: antiquewhite;
+    background-color: lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
